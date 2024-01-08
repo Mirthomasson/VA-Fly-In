@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reynolds Fly-In</title>
+		<style>
+			body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+}
+
+header {
+  background-color: #222;
+  color: #00ffcc; /* Neon Green */
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  padding: 20px;
+}
+
+.event-details,
+.registration-form,
+.merchandise,
+.meal-tickets,
+.updates,
+.rules {
+  background-color: #333;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+  color: #00ffcc; /* Neon Green */
+}
+
+form label {
+  color: #00ffcc; /* Neon Green */
+}
+
+form input,
+form button {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #00ffcc; /* Neon Green */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #222;
+  color: #00ffcc; /* Neon Green */
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>2024 Reynolds International Airport Fly-In</h1>
+			<p>
+				Join us for an amazing flying experience at Reynolds International
+				Airport!
+			</p>
+		</header>
+
+		<main>
+			<section class="event-details">
+				<h2>Event Details</h2>
+				<p>Date: June 6th-8th, 2024</p>
+				<p>Venue: Reynolds International Airport</p>
+			</section>
+
+			<section class="registration-form">
+				<h2>Register for the Event</h2>
+				<form action="process_registration.php" method="post">
+					<label for="pilotName">Pilot Name:</label>
+					<input type="text" id="pilotName" name="pilotName" required />
+
+					<label for="pilotEmail">Pilot Email:</label>
+					<input type="email" id="pilotEmail" name="pilotEmail" required />
+
+					<label for="nonPilotName">Non-Pilot Name:</label>
+					<input type="text" id="nonPilotName" name="nonPilotName" required />
+
+					<label for="nonPilotEmail">Non-Pilot Email:</label>
+					<input
+						type="email"
+						id="nonPilotEmail"
+						name="nonPilotEmail"
+						required
+					/>
+
+					<button type="submit">Register</button>
+				</form>
+			</section>
+
+			<section class="merchandise">
+				<h2>Merchandise</h2>
+				<p>T-Shirts: $20 each</p>
+				<form action="process_purchase.php" method="post">
+					<label for="shirtQuantity">Quantity:</label>
+					<input
+						type="number"
+						id="shirtQuantity"
+						name="shirtQuantity"
+						min="0"
+						required
+					/>
+					<button type="submit">Add to Cart</button>
+				</form>
+			</section>
+
+			<section class="meal-tickets">
+				<h2>Meal Tickets</h2>
+				<p>Meal Ticket: $10 each</p>
+				<form action="process_purchase.php" method="post">
+					<label for="mealQuantity">Quantity:</label>
+					<input
+						type="number"
+						id="mealQuantity"
+						name="mealQuantity"
+						min="0"
+						required
+					/>
+					<button type="submit">Add to Cart</button>
+				</form>
+			</section>
+
+			<section class="updates">
+				<h2>Event Updates</h2>
+				<p>Stay tuned for the latest event updates and announcements.</p>
+			</section>
+
+			<section class="rules">
+				<h2>Event Rules</h2>
+				<p>1. Follow all safety guidelines.</p>
+				<p>2. Respect airport regulations.</p>
+				<p>3. Have a great time!</p>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Reynolds International Airport Fly-In. All rights reserved.</p>
+		</footer>
+	</body>
+</html>
