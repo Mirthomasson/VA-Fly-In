@@ -3,79 +3,27 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="/photos/ReynoldsFly-InFav.png"
+			type="image/x-icon"
+		/>
 		<title>Reynolds Fly-In</title>
-		<style>
-			body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #111;
-  color: #fff;
-}
-
-header {
-  background-color: #222;
-  color: #00ffcc; /* Neon Green */
-  text-align: center;
-  padding: 1em;
-}
-
-main {
-  padding: 20px;
-}
-
-.event-details,
-.registration-form,
-.merchandise,
-.meal-tickets,
-.updates,
-.rules {
-  background-color: #333;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-h2 {
-  color: #00ffcc; /* Neon Green */
-}
-
-form label {
-  color: #00ffcc; /* Neon Green */
-}
-
-form input,
-form button {
-  background-color: #444;
-  color: #fff;
-  border: 1px solid #00ffcc; /* Neon Green */
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-form button {
-  cursor: pointer;
-}
-
-footer {
-  background-color: #222;
-  color: #00ffcc; /* Neon Green */
-  text-align: center;
-  padding: 1em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-		</style>
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="/countdown.js"></script>
 	</head>
 	<body>
 		<header>
+			<div class="svg-container">
+				<object id="mySvgObject" type="image/svg+xml" data="/photos/ReynoldsFly-In.svg"></object>
+			  </div>
+			
 			<h1>2024 Reynolds International Airport Fly-In</h1>
 			<p>
 				Join us for an amazing flying experience at Reynolds International
 				Airport!
 			</p>
+			<div id="countdown"></div>
 		</header>
 
 		<main>
@@ -84,7 +32,6 @@ footer {
 				<p>Date: June 6th-8th, 2024</p>
 				<p>Venue: Reynolds International Airport</p>
 			</section>
-
 			<section class="registration-form">
 				<h2>Register for the Event</h2>
 				<form action="process_registration.php" method="post">
@@ -146,16 +93,82 @@ footer {
 				<p>Stay tuned for the latest event updates and announcements.</p>
 			</section>
 
+			<section class="google-map">
+				<h2>Event Location</h2>
+				<!-- Replace with your actual Google Maps iframe code -->
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-73.962221!3d40.785091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDU2JzEwLjYiTiA3M8KwMzMnNTIuNyJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+					width="600"
+					height="450"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+				></iframe>
+			</section>
+
 			<section class="rules">
-				<h2>Event Rules</h2>
-				<p>1. Follow all safety guidelines.</p>
-				<p>2. Respect airport regulations.</p>
-				<p>3. Have a great time!</p>
+				<h2>Fly-In Rules</h2>
+				<h3>Requirements</h3>
+				<ul>
+					<li>Sign a waiver before flying</li>
+					<li>Attend pilot briefing before flying</li>
+					<li>Wear a wristband at all times</li>
+					<li>
+						Keep the runway clear (remove unused equipment from the field
+						promptly after the flight and only set up immediately before
+						launching)
+					</li>
+					<li>Familiarize themselves with the airspace and local conditions</li>
+					<li>Yield right of way to landing pilots</li>
+					<li>Keep all pets on a leash</li>
+					<li>
+						Ensure pets use appropriate area for relieving themselves and
+						immediately clean up any "accidents"
+					</li>
+					<li>Register as a pilot if a vendor</li>
+					<li>Fly commensurate with skill level</li>
+					<li>
+						Keep all equipment, tents, vehicles, and people behind the flight
+						line unless directly involved in flight operations
+					</li>
+				</ul>
+
+				<h3>Limitations</h3>
+				<ul>
+					<li>Participants must NOT:</li>
+					<li>Harass wildlife or people</li>
+					<li>Fly low over people, buildings, or animals</li>
+					<li>
+						Perform demonstration flights without prior arrangement with staff
+					</li>
+					<li>Perform group training or first solo flights</li>
+					<li>
+						Enter the flight area (past the flight line) without permission,
+						wristband, and signed waiver
+					</li>
+				</ul>
+			</section>
+
+			<section class="contact-form">
+				<h2>Contact Us</h2>
+				<!-- Add your contact form code here -->
+				<form action="process_contact.php" method="post">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required />
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required />
+
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" rows="4" required></textarea>
+
+					<button type="submit">Send Message</button>
+				</form>
 			</section>
 		</main>
 
 		<footer>
-			<p>&copy; 2024 Reynolds International Airport Fly-In. All rights reserved.</p>
+			<p>&copy; 2024 Paramotor Fly-in Event. All rights reserved.</p>
 		</footer>
 	</body>
 </html>
