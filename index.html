@@ -10,7 +10,7 @@
 		/>
 		<title>Reynolds Fly-In</title>
 		<link rel="stylesheet" href="styles.css" />
-		<script defer src="/countdown.js"></script>
+		<script class="countdown" defer src="/countdown.js"></script>
 		<link
 			rel="stylesheet"
 			type="text/css"
@@ -55,20 +55,21 @@
 				<h2>Register for the Event</h2>
 				<form action="process_registration.php" method="post">
 					<label for="pilotName">Pilot Name:</label>
-					<input type="text" id="pilotName" name="pilotName" required />
+					<input type="text" id="pilotName" name="pilotName" placeholder="Name"/>
 
 					<label for="pilotEmail">Pilot Email:</label>
-					<input type="email" id="pilotEmail" name="pilotEmail" required />
-
+					<input type="email" id="pilotEmail" name="pilotEmail" placeholder="Email"/>
+					<button type="submit">Register</button>
+				</br>
 					<label for="nonPilotName">Non-Pilot Name:</label>
-					<input type="text" id="nonPilotName" name="nonPilotName" required />
+					<input type="text" id="nonPilotName" name="nonPilotName" placeholder="Name"/>
 
 					<label for="nonPilotEmail">Non-Pilot Email:</label>
 					<input
 						type="email"
 						id="nonPilotEmail"
 						name="nonPilotEmail"
-						required
+						placeholder="Email"
 					/>
 
 					<button type="submit">Register</button>
@@ -174,10 +175,10 @@
 				<!-- Add your contact form code here -->
 				<form target="_blank" action="https://formsubmit.co/394f17c1d1f32b014291f155586365f5" method="POST">
 					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" required />
+					<input type="text" id="name" name="name" placeholder="Name" required />
 
 					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required />
+					<input type="email" id="email" name="email" placeholder="Email" required />
 
 					<label for="message">Message:</label>
 					<textarea id="message" name="message" rows="4" required></textarea>

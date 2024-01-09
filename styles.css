@@ -29,6 +29,14 @@ header {
   opacity: 0.75;
 }
 
+#countdown {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
 .logo-container {
   position: absolute;
   top: 50%;
@@ -119,6 +127,7 @@ form button {
 form button {
   cursor: pointer;
   background-color: #4CAF50;
+  color: white;
   transition: 0.3s ease-in-out;
 }
 
