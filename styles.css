@@ -25,7 +25,7 @@ header {
   width: 650px; /* Set the initial width of the SVG */
   height: auto;
   opacity: 0; /* Start with opacity 0 for the swooping effect */
-  animation: swoop 2s ease-in-out forwards, pulse 2s ease-in-out infinite 2s; /* Swoop in and continuous pulse animation */
+  animation: swoop 2s ease-in-out forwards; /* Swoop in */
 }
 
 @keyframes swoop {
@@ -35,17 +35,6 @@ header {
   }
   100% {
     transform: translateX(0) translateY(0) scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.2);
     opacity: 1;
   }
 }
@@ -64,6 +53,12 @@ main {
   padding: 20px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
+
+#message {
+  margin-bottom: -15px;
+}
+
+
 
 h2,
 h3 {
@@ -108,10 +103,15 @@ footer {
   color: #76ecf9; /* Updated Neon Green */
   text-align: center;
   padding: 1em;
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
 }
+
+
+
+
+
 
 
 
