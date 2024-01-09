@@ -11,10 +11,26 @@
 		<title>Reynolds Fly-In</title>
 		<link rel="stylesheet" href="styles.css" />
 		<script defer src="/countdown.js"></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+		/>
 	</head>
 	<body>
 		<header>
-			<div class="svg-container">
+			<div class="header-carousel">
+				<div><img src="/photos/Gilmore.png" alt="Gilmore" /></div>
+				<div><img src="/photos/Luke.png" alt="Higginbotham" /></div>
+				<div><img src="/photos/Mir.png" alt="Mir" /></div>
+				<!-- Add more image divs as needed -->
+			</div>
+			<div class="logo-container">
 				<object
 					id="mySvgObject"
 					type="image/svg+xml"
@@ -27,12 +43,12 @@
 				Join us for an amazing flying experience at Reynolds International
 				Airport!
 			</p>
-			<div id="countdown"></div>
 		</header>
 
 		<main>
 			<section class="event-details">
 				<h2>Event Details</h2>
+				<div id="countdown"></div>
 				<p>Date: June 6th-8th, 2024</p>
 				<p>Venue: Reynolds International Airport</p>
 			</section>
@@ -173,7 +189,25 @@
 		</main>
 
 		<footer>
-			<p>&copy; 2024 Paramotor Fly-in Event. All rights reserved.</p>
+			<p>&copy; 2024 Reynolds International Airport Fly-in Event. All rights reserved.</p>
 		</footer>
+
+		<!-- Add Slick Carousel JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$(".header-carousel").slick({
+					autoplay: true,
+					autoplaySpeed: 3000, // Change the speed as needed
+					dots: false,
+					arrows: false,
+					infinite: true,
+					fade: true,
+					cssEase: "linear",
+				});
+			});
+		</script>
 	</body>
 </html>
