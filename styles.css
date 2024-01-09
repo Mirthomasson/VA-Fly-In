@@ -163,14 +163,14 @@ footer {
   }
 
   .header-carousel {
-      height: 200px; /* Adjust the height as needed */
+      height: 5px; /* Adjust the height as needed */
   }
 
   .logo-container {
       position: static;
       transform: none;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: -40px;
   }
 
   #mySvgObject {
