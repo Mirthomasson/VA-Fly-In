@@ -142,5 +142,45 @@ footer {
   padding: 1em;
   position: static;
   bottom: 0;
-  width: 100%;
+}
+
+
+/* Add mobile-friendly styles with media queries */
+@media only screen and (max-width: 768px) {
+  header {
+      height: auto;
+  }
+
+  .header-carousel {
+      height: 200px; /* Adjust the height as needed */
+  }
+
+  .logo-container {
+      position: static;
+      transform: none;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  #mySvgObject {
+      width: 100%;
+      max-width: 300px; /* Adjust the width as needed */
+      height: auto;
+  }
+
+  main {
+      padding: 10px;
+  }
+
+  .event-details,
+  .google-map,
+  .rules,
+  .contact-form,
+  .registration-form,
+  .merchandise,
+  .meal-tickets,
+  .updates {
+      margin-right: 0;
+      margin-left: 0;
+  }
 }
