@@ -108,7 +108,8 @@ form input,
 form textarea,
 form button {
   background-color: transparent;
-  color: #fff;
+  color:#333;
+  font-weight: bold;
   border: 1px solid #008ba3; /* Darker Cyan */
   border-radius: 5px; /* Rounded edges */
   padding: 10px;
