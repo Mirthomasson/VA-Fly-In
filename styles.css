@@ -147,6 +147,12 @@ input, textarea {
   transition: border-color 0.3s ease;
 }
 
+.tent {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 footer {
   color: #008ba3; /* Darker Cyan */
   text-align: center;
