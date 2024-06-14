@@ -1,5 +1,5 @@
 // Adjust the event date and time here
-const eventDate = new Date('June 6, 2025 00:00:00').getTime();
+const eventDate = new Date('June 5, 2025 00:00:00').getTime();
 
 // Update the countdown every second
 const countdownElement = document.getElementById('countdown');
